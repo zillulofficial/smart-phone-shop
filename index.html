@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunting Phone API</title>
+    <!-- DAISY UI & TAILWIND -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <!-- card section -->
+        <section class="container mx-auto pt-8">
+            <!-- input field -->
+            <div class="join mb-9 flex justify-center">
+                <input id="insertedText" type="text" placeholder="phone name" class="input input-bordered join-item" /> 
+                <button onclick="searchPhone()" class="btn btn-primary join-item">Search</button>
+              </div>
+
+              <!-- loading spinner -->
+              <div id="loading-spinner" class="text-center mt-40 mb-40 hidden">
+                  <span class="loading loading-bars text-primary loading-lg"></span>
+              </div>
+
+              <!-- card container -->
+            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center space-y-4">
+                
+            </div>
+            <!-- show all Button -->
+            <div id="showAllButton" class="hidden">
+                <button class="btn btn-primary mt-7 flex mx-auto">Show All</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/phone.js"></script>
+</body>
+
+</html>
